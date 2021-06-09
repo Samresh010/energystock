@@ -1,0 +1,401 @@
+from array import*
+
+ss= array('i',[])
+sr= array('i',[])
+bs= array('i',[])
+br= array('i',[])
+cost= array('i',[])
+print ("for seller:")
+for i in range(96):
+    x= int(input("Enter stock "))
+    ss.append(x)
+for i in range(96):
+    x= int(input("Enter Rate "))
+    sr.append(x)
+Print ("for seller")
+for i in range(96):
+    x= int(input("Enter stock"))
+    bs.append(x)
+for i in range(96):
+    x= int(input("Enter Rate"))
+    br.append(x)
+for i in range(96):
+    if br[i]>=sr[i]:
+        if ss[i]<=bs[i]:
+            stocksold= ss[i]-bs[i]
+            price= stocksold*sr[i]
+            cost.append(price)
+for i in range (96):
+    totalcost+=cost[i]
+print ("Total cost", totalcost)
+
+LOGIN INTEGRATION :
+from flask import Flask, render_template
+app = Flask(__name__)
+@app.route ('/')
+def index():
+    return render_template("login.html")
+
+if __name__=='__main__':
+    app.run(debug=True)
+
+HTML LOGIN:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>login</title>
+</head>
+<body>
+<div>
+<form action=""method="Post">
+   <label>USERNAME</label>><br>
+   <input name="username" type="email" placeholder="E-mail"><br><br>
+   <label> PASSWORD </label>><br>
+   <input name= "password" type="password" placeholder="Enter Password"><br><br>
+   <input type="submit" value="LOGIN"><br><br>
+</form>
+</div>
+<div>
+   <form action="/now">
+<label>New Here?</label>
+   <input value="Register" type="submit">
+   </form>
+</div>
+</body>
+</html>
+
+
+Register:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Register</title>
+</head>
+<body>
+
+ <form action=""method="Post">
+   <label>NAME</label>><br>
+   <input type="text" name="one" id="name"><br><br>
+   <label> USERNAME </label>><br>
+   <input type = "email" name="two" id="username"><br><br>
+   <label> PASSWORD </label>><br>
+   <input type = "password" name="three" id="Enter Password"><br><br>
+   <input type="submit" value="CREATE USER"><br><br>
+ </form>
+
+</body>
+</html>
+
+
+
+13.05.2020
+
+Registration
+
+<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FuTcqysLufFSdX2il9r6oSJ%2FUntitled%3Fnode-id%3D4%253A2" allowfullscreen></iframe><iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FuTcqysLufFSdX2il9r6oSJ%2FUntitled%3Fnode-id%3D4%253A2" allowfullscreen></iframe>
+
+LOGIN 
+
+/* Union */
+
+position: absolute;
+width: 411px;
+height: 731px;
+
+background: linear-gradient(180deg, #6BC93E 30.52%, rgba(231, 251, 9, 0.12) 100%);
+
+
+/* Rectangle 1 */
+
+position: absolute;
+width: 411px;
+height: 731px;
+
+
+
+/* Rectangle 1 */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: linear-gradient(180deg, #6BC93E 30.52%, rgba(231, 251, 9, 0.12) 100%);
+
+
+/* Welcome New User Register Yourself to get started */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 22.4%;
+bottom: 70.2%;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 14px;
+text-align: center;
+
+color: #000000;
+
+
+
+/* Name */
+
+position: absolute;
+left: 0.24%;
+right: -0.24%;
+top: 33.65%;
+bottom: 58.95%;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 14px;
+text-align: center;
+
+color: #000000;
+
+
+
+/* Rectangle 2 */
+
+position: absolute;
+height: 30px;
+left: 19px;
+right: 18px;
+top: calc(50% - 30px/2 - 85.5px);
+
+background: #C4C4C4;
+
+
+/* Email ID */
+
+position: absolute;
+width: 225px;
+height: 34px;
+left: 94px;
+top: 305px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 14px;
+text-align: center;
+
+color: #000000;
+
+
+
+/* Rectangle 3 */
+
+position: absolute;
+width: 374px;
+height: 30px;
+left: 19px;
+top: 329px;
+
+background: #C4C4C4;
+
+
+/* Password */
+
+position: absolute;
+width: 225px;
+height: 29px;
+left: 94px;
+top: 369px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 14px;
+text-align: center;
+
+color: #000000;
+
+
+
+/* Rectangle 4 */
+
+position: absolute;
+width: 374px;
+height: 30px;
+left: 19px;
+top: 398px;
+
+background: #C4C4C4;
+
+
+/* GST TIN */
+
+position: absolute;
+width: 225px;
+height: 30px;
+left: 94px;
+top: 446px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 14px;
+text-align: center;
+
+color: #000000;
+
+
+
+/* Rectangle 5 */
+
+position: absolute;
+width: 374px;
+height: 30px;
+left: 19px;
+top: 476px;
+
+background: #C4C4C4;
+
+
+/* Please Login to continue */
+
+position: absolute;
+width: 411px;
+height: 83px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 14px;
+text-align: center;
+
+color: #000000;
+
+
+
+/* User Name */
+
+position: absolute;
+width: 411px;
+height: 59px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 14px;
+text-align: center;
+
+color: #000000;
+
+
+
+/* Rectangle 6 */
+
+position: absolute;
+width: 374px;
+height: 30px;
+
+background: #C4C4C4;
+
+
+/* Password */
+
+position: absolute;
+width: 411px;
+height: 25px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 14px;
+text-align: center;
+
+color: #000000;
+
+
+
+/* Rectangle 7 */
+
+position: absolute;
+width: 374px;
+height: 30px;
+
+background: #C4C4C4;
+
+
+/* Rectangle 8 */
+
+position: absolute;
+width: 153px;
+height: 75px;
+
+background: rgba(230, 9, 9, 0.81);
+
+
+/* Power Tech */
+
+position: absolute;
+width: 153px;
+height: 75px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 28px;
+text-align: center;
+
+color: #000000;
+
+
+
+/* Forgot Password New User? Signup */
+
+position: absolute;
+width: 236px;
+height: 83px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 14px;
+text-align: center;
+
+color: #000000;
+
+
+
+/* Created to Power Tomrrow */
+
+position: absolute;
+width: 258px;
+height: 65px;
+
+font-family: Cambria Math;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 28px;
+text-align: center;
+
+color: #000000;
+
+
+
+
+
+
+
+
